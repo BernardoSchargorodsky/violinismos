@@ -1,11 +1,30 @@
 
-const abrirMenuMobileBtn = document.querySelector('#boton-menu-mobile');
-const cerrarMenu = document.querySelector('.menu-oculto-mobile');
-const abrirBtn = document.querySelector('.abrir-menu-mobile-flex');
-const cerrarBtn = document.querySelector('.cerrar-menu-mobile-none');
 
-abrirMenuMobileBtn.addEventListener('click', function() {
-    cerrarMenu.classList.toggle('mostrar-menu-mobile');
-    abrirBtn.classList.toggle('abrir-menu-mobile-none');
-    cerrarBtn.classList.toggle('cerrar-menu-mobile-flex');
-});
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenuBtn = document.querySelector('#burger-menu-toggler');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    function navResponsive() {
+
+        burgerMenuBtn.addEventListener('click', function () {
+            document.body.classList.toggle('mobile-menu-active');
+        });
+
+        menuItems.forEach(function (menuItem) {
+            menuItem.addEventListener('click', function () {
+                document.body.classList.remove('mobile-menu-active');
+                let currentItem = document.querySelector('.active');
+                currentItem.classList.remove('active');
+                this.classList.add('active');
+
+            })
+
+        });
+
+
+
+    }
+
+    navResponsive();
+
+})

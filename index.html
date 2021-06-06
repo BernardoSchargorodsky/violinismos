@@ -19,29 +19,17 @@
                 id="logo_corporativo"></picture>
 
         <nav class="nav">
-            <ul>
+            <button id="burger-menu-toggler">
+                <i class="fas fa-bars" id="open-mobile-menu"></i>
+                <i class="fas fa-times" id="close-mobile-menu"></i>
+            </button>
+            <ul id="main-menu">
                 <li class="menu-item"><a href="#welcome" alt="inicio">Inicio</a></li>
-                <li class="menu-item"><a href="about.html" target="_blank" alt="about" id="de_mi">Sobre mí</a></li>
-                <li class="menu-item"><a href="contact.html" target="_blank" alt="contact">Contacto</a></li>
-                <li class="menu-item"><a href="material.html" target="_blank" alt="material">Material</a></li>
+                <li class="menu-item"><a href="about.html" alt="about" id="sobre_mi">Sobre mí</a></li>
+                <li class="menu-item"><a href="contact.html" alt="contact">Contacto</a></li>
+                <li class="menu-item"><a href="material.html" alt="material">Material</a></li>
             </ul>
         </nav>
-        <button id="boton-menu-mobile">
-            <div class="abrir-menu-mobile-flex">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="cerrar-menu-mobile-none">
-                <i class="fas fa-times"></i>
-            </div>
-        </button>
-        <div class="menu-oculto-mobile">
-            <ul>
-            <li class="menu-item"><a href="#welcome" alt="inicio">Inicio</a></li>
-            <li class="menu-item"><a href="about.html" target="_blank" alt="about" id="de_mi">Sobre mí</a></li>
-            <li class="menu-item"><a href="contact.html" target="_blank" alt="contact">Contacto</a></li>
-            <li class="menu-item"><a href="material.html" target="_blank" alt="material">Material</a></li>
-        </ul>
-    </div>
     </header>
     <main>
         <section id="welcome">
@@ -184,40 +172,40 @@
             </div>
         </section>
         <section class="section" id="algunas_reflexiones">
-            
+
             <div class="card_title">
                 <h1>Algunas reflexiones: <em>preguntitas sobre el violín</em></h1>
             </div>
             <article class="card_responsive">
-            <div class="post-it">
-                <p class="sticky taped zoom">
-                    ¿Existen denominadores comunes en las biografías educativas de la enorme mayoría de los
-                    violinistas? </p>
-                <br>
-                <p class="sticky taped zoom">
-                    ¿En qué momento de su carrera une estudiante de violín logra el profesionalismo?
-                </p>
-                <br>
-                <p class="sticky taped zoom">
-                    ¿Existen formas de lograr un gran desenvolvimiento instrumental sin sufrir o padecer el camino?
-                </p>
+                <div class="post-it">
+                    <p class="sticky taped zoom">
+                        ¿Existen denominadores comunes en las biografías educativas de la enorme mayoría de los
+                        violinistas? </p>
+                    <br>
+                    <p class="sticky taped zoom">
+                        ¿En qué momento de su carrera une estudiante de violín logra el profesionalismo?
+                    </p>
+                    <br>
+                    <p class="sticky taped zoom">
+                        ¿Existen formas de lograr un gran desenvolvimiento instrumental sin sufrir o padecer el camino?
+                    </p>
 
-            </div>
-            <div class="big-note">
-                <div class="post-it">
-                    <p class="note zoom">
-                        ¿Cuándo se puede empezar a enseñar violín?
-                        ¿Cómo es el gesto de cada sonido?
-                        ¿Qué lugar ocupa mi cuerpo cuando estoy tocando?
-                    </p>
                 </div>
-                <div class="post-it">
-                    <p class="note zoom">
-                        ¿Qué imagen tenía del violín antes de mi primera clase de instrumento y cuál tengo ahora?
-                        ¿Para quién tocamos el violín? ¿Por qué tocamos el violín?
-                    </p>
+                <div class="big-note">
+                    <div class="post-it">
+                        <p class="note zoom">
+                            ¿Cuándo se puede empezar a enseñar violín?
+                            ¿Cómo es el gesto de cada sonido?
+                            ¿Qué lugar ocupa mi cuerpo cuando estoy tocando?
+                        </p>
+                    </div>
+                    <div class="post-it">
+                        <p class="note zoom">
+                            ¿Qué imagen tenía del violín antes de mi primera clase de instrumento y cuál tengo ahora?
+                            ¿Para quién tocamos el violín? ¿Por qué tocamos el violín?
+                        </p>
+                    </div>
                 </div>
-            </div>
             </article>
             <div class="card_content" id="preguntitas">
                 <div class="card_subtext">
@@ -253,7 +241,8 @@
                 </div>
             </div>
         </footer>
-    </main>    
+    </main>
+    <!-- js -->
     <script src="script.js"></script>
 </body>
 

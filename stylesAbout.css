@@ -4,17 +4,19 @@
     font-family: 'IBM Plex Serif', serif;
 }
 
-/* estilos del header */
+
 body {
     margin: 0;
     background-color: #e7e8eb;
 }
 
+/* estilos del header */
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     background-color: white;
     z-index: 200;
     position: fixed;
@@ -54,12 +56,19 @@ header nav ul li a {
     color: black;
 }
 
-/* título */
-header h1 {
-    margin-right: 40%;
+#burger-menu-toggler  {
+    display: none;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color:#484c7f;
+    font-size: 20px;
+    margin-right: 5vw;
+    z-index: 2;
 }
 
-/* de mí */
+/* sobre mí */
 
 #sobre_mi {
     height: 100%;
@@ -71,7 +80,7 @@ header h1 {
 #sobre_mi_background {	
     background-size: cover;
     position: inherit;
-	width: 100vw;
+    width: 100%;
 	overflow: hidden;
 	z-index: -1;
 	display: block;
@@ -118,6 +127,7 @@ header h1 {
     height: 600px;
     overflow: visible;
     margin-left: 10%;
+    border: 0;
 }
 
 /* Formato del card */
@@ -157,10 +167,10 @@ header h1 {
 
 
 /* Estilos del footer */
+
 footer {
     text-align: center;
     background-color: #484c7f;
-    width: 100vw;
     height: 10%;
     color: cornsilk;
     display: flex;
@@ -200,25 +210,80 @@ i {
         justify-content: center;
     }
 
+    .cv {
+        margin-left: 0;
+    
+    }
+
 }
 
 /* TABLETS */
 @media screen and (max-width: 768px) { 
-    .nav {
-        display: none;
-    }
-    #boton-menu-mobile {
-        display: block;
-        margin-right: 3%;
-        margin-top: 3%;
-        width: 10%;
-        height: 10%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        background-color: #484c7f;
-    }
+   /* Menu responsive */
+        
+   ul#main-menu {
+    display: none;
+}
+ 
+nav button i {
+    color:#373a68;
+    font-size: 25px;
+    padding-top: 10%;
+    margin-top: 50%;
+}
+
+
+#burger-menu-toggler {
+    display: flex;
+}
+
+#close-mobile-menu {
+    display: none;
+}
+
+body.mobile-menu-active #open-mobile-menu {
+    display: none;   
+    color: #373a68;
+    z-index: 700;
+}
+body.mobile-menu-active #close-mobile-menu {
+    display: block;
+    color: #373a68;
+    z-index: 700;
+}
+
+body.mobile-menu-active #main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    color: #373a68;
+    background-color: rgb(255, 255, 255); 
+}
+
+body.mobile-menu-active #logo_corporativo {
+    display: none;
+}
+
+body.mobile-menu-active #burguer-menu-toggler {
+    color:#373a68;
+    font-size: 25px;
+    padding-top: 10%;
+    margin-top: 50%;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    color: #484c7f;
+}
 
     header {
         margin-top: 0;
@@ -226,6 +291,7 @@ i {
 
     #sobre_mi {
         position: relative;
+        color: #484c7f;
     }
 
     .sobre_mi {
@@ -252,7 +318,5 @@ i {
         flex-direction: column;
         justify-content: center;
         padding-top: 10px;
-    }
-
-    
+    }    
 }

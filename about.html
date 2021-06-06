@@ -8,7 +8,7 @@
     <link href="stylesAbout.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
-    <link href="reset.css" rel="reset">    
+    <link href="reset.css" rel="reset">
     <script src="https://kit.fontawesome.com/0a18d471b6.js" crossorigin="anonymous"></script>
     <title>VIOLINISMOS- Sobre mí</title>
 </head>
@@ -19,11 +19,15 @@
                 id="logo_corporativo"></picture>
 
         <nav class="nav">
-            <ul>
-                <li><a href="index.html" alt="inicio">Inicio</a></li>
-                <li><a href="about.html" target="_blank" alt="about" id="sobre_mi">Sobre mí</a></li>
-                <li><a href="contact.html" target="_blank" alt="contact">Contacto</a></li>
-                <li><a href="material.html" target="_blank" alt="material">Material</a></li>
+            <button id="burger-menu-toggler">
+                <i class="fas fa-bars" id="open-mobile-menu"></i>
+                <i class="fas fa-times" id="close-mobile-menu"></i>
+            </button>
+            <ul id="main-menu">
+                <li class="menu-item"><a href="index.html" alt="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="about.html" alt="about" id="sobre_mi">Sobre mí</a></li>
+                <li class="menu-item"><a href="contact.html" alt="contact">Contacto</a></li>
+                <li class="menu-item"><a href="material.html" alt="material">Material</a></li>
             </ul>
         </nav>
     </header>
@@ -71,9 +75,7 @@
                         Música Popular Argentina, abocándome a la música del ambiente local: el folklore y el tango.</p>
                 </div>
                 <div class="card_img">
-                    <iframe
-                        src="C:\Users\PROPIETARIO\Desktop\Ber\ALT- FullStack\Violinismos\CV Schargorodsky Bernardo.pdf"
-                        alt="cv" class="cv" width="100%" height="500px">
+                    <iframe src="CV Schargorodsky Bernardo.pdf" alt="cv" class="cv" width="100%" height="500px">
                     </iframe>
                 </div>
             </div>
@@ -96,6 +98,9 @@
             <i class="fab fa-linkedin-in"></i>
         </div>
     </footer>
+
+    <!-- js -->
+    <script src="script.js"></script>
 
 </body>
 

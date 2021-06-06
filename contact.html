@@ -17,17 +17,20 @@
     <header>
         <picture><img src="Logo violinismos/Logo_violinismos_transparente.png" id="logo_corporativo"></picture>
         <nav class="nav">
-            <ul>
-                <li><a href="index.html" alt="inicio">Inicio</a></li>
-                <li><a href="about.html" target="_blank" alt="about" id="de_mi">Sobre mí</a></li>
-                <li><a href="contact.html" target="_blank" alt="contact">Contacto</a></li>
-                <li><a href="material.html" target="_blank" alt="material">Material</a></li>
+            <button id="burger-menu-toggler">
+                <i class="fas fa-bars" id="open-mobile-menu"></i>
+                <i class="fas fa-times" id="close-mobile-menu"></i>
+            </button>
+            <ul id="main-menu">
+                <li class="menu-item"><a href="index.html" alt="inicio">Inicio</a></li>
+                <li class="menu-item"><a href="about.html" alt="about" id="sobre_mi">Sobre mí</a></li>
+                <li class="menu-item"><a href="contact.html" alt="contact">Contacto</a></li>
+                <li class="menu-item"><a href="material.html" alt="material">Material</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="contact">
-        <picture><img src=9.png alt="contact_background" id="contact_background"></picture>
         <article class="contact_form">
             <form id="contact_form" class="form">
                 <label for="nombre">Nombre:</label>
@@ -66,23 +69,27 @@
         </article>
     </section>
 
-</body>
+    <footer>
+        <p><strong>"Quizá entonces, suponiendo que muchos músicos y pedagógos estén convencidos que la enseñanza
+                puede
+                evolucionar,
+                el violín dejará de ser únicamente el instrumento difícil y tiránico contra el que luchamos y podrá
+                convertirse
+                en una vía auténtica de realización que permitirá, a los que la buscan de verdad, encontrarse a sí
+                mismos
+                y hacer vibrar su cuerda interior."</strong></p>
+        <p>El violín interior, Dominique Hoppenot.
+        </p>
+        <div class="social_media">
+            <a href="http://wwww.facebook.com/0ceanomar" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
 
-<footer>
-    <p><strong>"Quizá entonces, suponiendo que muchos músicos y pedagógos estén convencidos que la enseñanza puede
-        evolucionar,
-        el violín dejará de ser únicamente el instrumento difícil y tiránico contra el que luchamos y podrá
-        convertirse
-        en una vía auténtica de realización que permitirá, a los que la buscan de verdad, encontrarse a sí
-        mismos
-        y hacer vibrar su cuerda interior."</strong></p>
-    <p>El violín interior, Dominique Hoppenot.
-    </p>
-    <div class="social_media">
-        <a href="http://wwww.facebook.com/0ceanomar" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-linkedin-in"></i>
-    </div>
-</footer>
+    <!-- js -->
+    <script src="script.js"></script>
+
+</body>
 
 </html>
