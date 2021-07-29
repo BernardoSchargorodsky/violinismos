@@ -14,23 +14,9 @@
 </head>
 
 <body class="font">
-    <header>
-        <picture><img src="Logo violinismos/Logo_violinismos_transparente.png" alt="logo_corporativo"
-                id="logo_corporativo"></picture>
-
-        <nav class="nav">
-            <button id="burger-menu-toggler">
-                <i class="fas fa-bars" id="open-mobile-menu"></i>
-                <i class="fas fa-times" id="close-mobile-menu"></i>
-            </button>
-            <ul id="main-menu">
-                <li class="menu-item"><a href="#welcome" alt="inicio">Inicio</a></li>
-                <li class="menu-item"><a href="about.html" alt="about" id="sobre_mi">Sobre mí</a></li>
-                <li class="menu-item"><a href="contact.html" alt="contact">Contacto</a></li>
-                <li class="menu-item"><a href="material.html" alt="material">Material</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+    require_once 'header.php'
+    ?>
     <main>
         <section id="welcome">
             <picture><img src=7.png alt="welcome" id="welcome_background"></picture>
@@ -219,28 +205,9 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <div class="footer_content">
-                <p><strong>"Quizá entonces, suponiendo que muchos músicos y pedagógos estén convencidos que la enseñanza
-                        puede
-                        evolucionar,
-                        el violín dejará de ser únicamente el instrumento difícil y tiránico contra el que luchamos y
-                        podrá
-                        convertirse
-                        en una vía auténtica de realización que permitirá, a los que la buscan de verdad, encontrarse a
-                        sí
-                        mismos
-                        y hacer vibrar su cuerda interior."</strong></p>
-                <p>El violín interior, Dominique Hoppenot.
-                </p>
-                <div class="social_media">
-                    <a href="http://wwww.facebook.com/0ceanomar" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                </div>
-            </div>
-        </footer>
+    <?php
+    require_once 'footer.php'
+    ?>
     </main>
     <!-- js -->
     <script src="script.js"></script>

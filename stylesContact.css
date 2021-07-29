@@ -69,7 +69,7 @@ header nav ul li a {
 
 /* contact */
 
-section {
+#contact {
     background-image: url(9.png);
     width: 100%;
     height: auto;
@@ -137,8 +137,8 @@ form textarea {
 }
 
 
-
 /* Estilos del footer */
+
 footer {
     text-align: center;
     background-color: #484c7f;
@@ -148,6 +148,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 20px;
+}
+
+.footer_content {
+    z-index: 200;
 }
 
 footer p {
@@ -163,6 +167,7 @@ i {
 .social_media {
     margin-top: 10px;
 }
+
 
 /* MEDIA QUERYS */
 
